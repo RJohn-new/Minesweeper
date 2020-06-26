@@ -85,7 +85,6 @@ def nearby(surface, squares, bombs, index, known, found):
             nearby(surface, squares, bombs, index+1, known, found)
         if not_top and index-1 not in known:
             nearby(surface, squares, bombs, index-1, known, found)
-
         if not_right and not_top and index+9 not in known:
             nearby(surface, squares, bombs, index+9, known, found)
         if not_right and not_bottom and index+11 not in known:
@@ -94,7 +93,6 @@ def nearby(surface, squares, bombs, index, known, found):
             nearby(surface, squares, bombs, index-9, known, found)
         if not_left and not_top and index-11 not in known:
             nearby(surface, squares, bombs, index-11, known, found)
-
         if not_right and index+10 not in known:
             nearby(surface, squares, bombs, index+10, known, found)
         if not_left and index-10 not in known:
